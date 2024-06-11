@@ -34,7 +34,7 @@ export async function getUserSubscriptionPlan(
   const hasPlan = true;
   let plan = freePlan;
   if (hasPlan) {
-      const subscription = await stripe.subscriptions.retrieve(user.stripeSubscriptionId)
+     // const subscription = await stripe.subscriptions.retrieve(user.stripeSubscriptionId)
 
     const subscription = {
         "id": "sub_1MowQVLkdIwHu7ixeRlqHVzs",
