@@ -24,10 +24,10 @@ export async function getUserSubscriptionPlan(
         throw new Error("User not found")
     }
 
-    const hasPlan = user.stripePriceId &&
+    //const hasPlan = user.stripePriceId &&
         user.stripeCurrentPeriodEnd?.getTime() + 86_400_000 > Date.now()
-
-    let plan = freePlan
+    const hasPlan = true;
+    let plan = freePlan;
     if (hasPlan) {
         const subscription = await stripe.subscriptions.retrieve(user.stripeSubscriptionId)
 
