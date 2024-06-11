@@ -25,7 +25,7 @@ export async function getUserSubscriptionPlan(
     }
 
     //const hasPlan = user.stripePriceId &&
-        user.stripeCurrentPeriodEnd?.getTime() + 86_400_000 > Date.now()
+     //   user.stripeCurrentPeriodEnd?.getTime() + 86_400_000 > Date.now()
     const hasPlan = true;
     let plan = freePlan;
     if (hasPlan) {
