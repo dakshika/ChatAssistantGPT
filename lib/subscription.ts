@@ -38,6 +38,8 @@ export async function getUserSubscriptionPlan(
         } else if (subscription.plan.nickname === "Basic plan") {
             plan = basicPlan
         }
+
+        plan = proPlan;
     }
 
     return {
