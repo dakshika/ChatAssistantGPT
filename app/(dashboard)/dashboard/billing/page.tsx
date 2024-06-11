@@ -26,12 +26,12 @@ export default async function BillingPage() {
 
     // If user has a pro plan, check cancel status on Stripe.
     let isCanceled = false
-    if (subscriptionPlan.stripeSubscriptionId) {
-        const stripePlan = await stripe.subscriptions.retrieve(
-            subscriptionPlan.stripeSubscriptionId
-        )
-        isCanceled = stripePlan.cancel_at_period_end
-    }
+    // if (subscriptionPlan.stripeSubscriptionId) {
+    //     const stripePlan = await stripe.subscriptions.retrieve(
+    //         subscriptionPlan.stripeSubscriptionId
+    //     )
+    //     isCanceled = stripePlan.cancel_at_period_end
+    // }
 
     return (
         <DashboardShell>
