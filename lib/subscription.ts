@@ -72,7 +72,11 @@ export async function getUserSubscriptionPlan(
         },
         "quantity": 2,
         "subscription": "sub_1Mr6rbLkdIwHu7ix4Xm9Ahtd",
-        "tax_rates": []
+        "tax_rates": [],
+        "brandingCustomization": true,
+        "basicCustomization": true,
+        "userInquiries": true,
+        "maxChatbots":10
       };
 
     if (subscription.plan.nickname === "Pro plan") {
