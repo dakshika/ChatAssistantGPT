@@ -129,6 +129,17 @@ export function Chat({ chatbot, defaultMessage, className, withExitX = false, cl
     <div
       className="group w-full overflow-auto pl-0 peer-[[data-state=open]]:lg:pl-[250px] peer-[[data-state=open]]:xl:pl-[300px]"
     >
+      <style jsx>{`
+          .botfixed{
+            position: fixed !important;
+            width: 100% !important;
+            z-index: 1 !important;
+          }
+
+          .chat-inner{
+            padding-top: 4rem;
+          }
+      `}</style>
       <CardHeader style={{ background: chatbot.chatHeaderBackgroundColor }} className="sticky top-0 border-b p-2 botfixed">
         <div className="flex flex-row justify-between items-center">
           <h2 className="text-xl font-bold flex items-center h-10 gap-2">
