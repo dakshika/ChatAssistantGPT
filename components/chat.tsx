@@ -127,19 +127,8 @@ export function Chat({ chatbot, defaultMessage, className, withExitX = false, cl
 
   return (
     <div
-      className="group w-full overflow-auto pl-0 peer-[[data-state=open]]:lg:pl-[250px] peer-[[data-state=open]]:xl:pl-[300px]"
+      className="group w-full pl-0 peer-[[data-state=open]]:lg:pl-[250px] peer-[[data-state=open]]:xl:pl-[300px] z-10"
     >
-      <style jsx>{`
-          .botfixed{
-            position: fixed !important;
-            width: 100% !important;
-            z-index: 1 !important;
-          }
-
-          .chat-inner{
-            padding-top: 4rem;
-          }
-      `}</style>
       <CardHeader style={{ background: chatbot.chatHeaderBackgroundColor }} className="sticky top-0 border-b p-2 botfixed">
         <div className="flex flex-row justify-between items-center">
           <h2 className="text-xl font-bold flex items-center h-10 gap-2">
@@ -181,7 +170,7 @@ export function Chat({ chatbot, defaultMessage, className, withExitX = false, cl
 
       </CardHeader>
       <div
-        className={cn('pb-[200px] overflow-auto pl-5 sm:pl-20 pr-5 sm:pr-20 md:pb-[200px] pt-4 md:pt-10 chat-inner', className)}
+        className={cn('pb-[200px] overflow-auto pl-5 sm:pl-20 pr-5 sm:pr-20 md:pb-[200px] md:pt-10 pt-16', className)}
       >
         <ChatMessage isFirst={true} chatbot={chatbot} message={{ id: '0', role: "assistant", content: chatbot.welcomeMessage }} />
         <div className="flex-grow overflow-y-auto space-y-6 flex flex-col order-2">
