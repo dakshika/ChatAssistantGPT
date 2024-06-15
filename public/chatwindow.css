@@ -2829,7 +2829,7 @@ video {
 }
 
 .\[\&\>span\]\:line-clamp-1>span {
-  overflow: hidden;
+  overflow: hidden; 
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -2863,4 +2863,10 @@ video {
 
 .\[\&_tr\]\:border-b tr {
   border-bottom-width: 1px;
+}
+
+.sticky{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
