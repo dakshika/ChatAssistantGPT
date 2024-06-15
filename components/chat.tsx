@@ -127,9 +127,9 @@ export function Chat({ chatbot, defaultMessage, className, withExitX = false, cl
 
   return (
     <div
-      className="group w-full pl-0 peer-[[data-state=open]]:lg:pl-[250px] peer-[[data-state=open]]:xl:pl-[300px] z-10"
+      className="group w-full pl-0 peer-[[data-state=open]]:lg:pl-[250px] peer-[[data-state=open]]:xl:pl-[300px]"
     >
-      <CardHeader style={{ background: chatbot.chatHeaderBackgroundColor }} className="sticky top-0 border-b p-2 botfixed">
+      <CardHeader style={{ background: chatbot.chatHeaderBackgroundColor }} className="sticky top-0 border-b p-2 z-10">
         <div className="flex flex-row justify-between items-center">
           <h2 className="text-xl font-bold flex items-center h-10 gap-2">
             <div style={{ color: chatbot.chatHeaderTextColor }}>
