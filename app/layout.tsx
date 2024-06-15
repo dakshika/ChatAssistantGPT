@@ -76,7 +76,6 @@ export default async function RootLayout({
         </ThemeProvider>
         <Chatbot />
       </body>
-      <GoogleAnalytics gaId="AW-11267388324" />
     </html>
   );
 }
