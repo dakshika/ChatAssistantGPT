@@ -2865,8 +2865,12 @@ video {
   border-bottom-width: 1px;
 }
 
-.sticky{
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+.sticky, .botfixed{
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 1 !important;
+}
+
+.chat-inner{
+  padding-top: 4rem;
 }

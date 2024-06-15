@@ -170,7 +170,7 @@ export function Chat({ chatbot, defaultMessage, className, withExitX = false, cl
 
       </CardHeader>
       <div
-        className={cn('pb-[200px] overflow-auto pl-5 sm:pl-20 pr-5 sm:pr-20 md:pb-[200px] pt-4 md:pt-10', className)}
+        className={cn('pb-[200px] overflow-auto pl-5 sm:pl-20 pr-5 sm:pr-20 md:pb-[200px] pt-4 md:pt-10 chat-inner', className)}
       >
         <ChatMessage isFirst={true} chatbot={chatbot} message={{ id: '0', role: "assistant", content: chatbot.welcomeMessage }} />
         <div className="flex-grow overflow-y-auto space-y-6 flex flex-col order-2">
