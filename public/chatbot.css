@@ -184,7 +184,7 @@ table {
 3. Remove default padding in all browsers.
 */
 
-button,
+button, 
 input,
 optgroup,
 select,
@@ -2901,4 +2901,10 @@ video {
 
 .\[\&_tr\]\:border-b tr {
   border-bottom-width: 1px;
+}
+
+.sticky{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
