@@ -25,6 +25,11 @@ const fontHeading = localFont({
   variable: "--font-heading",
 })
 
+const transparent = {
+'background': 'transparent',
+'background-color': 'transparent'
+};
+
 const title = `Build chatbot using OpenAI Assistant - ${siteConfig.name}`;
 const description = "OpenAssistantGPT is an open source platform for building chatbot using OpenAI's assitants.";
 
@@ -59,6 +64,7 @@ export default async function RootLayout({
       <AOSInit />
       <body
         id='root'
+        style={transparent}
         className={cn(
           "min-h-screen font-sans antialiased",
           fontSans.variable,
