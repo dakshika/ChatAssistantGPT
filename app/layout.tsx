@@ -13,7 +13,6 @@ import Chatbot from '@/components/chatbot';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { AOSInit } from '@/components/aos-init';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { Background } from '@/components/background';
 
 const fontSans = FontSans({
   subsets: ["latin"],
